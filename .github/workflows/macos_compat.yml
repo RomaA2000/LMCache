@@ -140,7 +140,7 @@ jobs:
 
       - name: Upload server log on failure
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: lmcache-server-log-${{ matrix.platform }}-py${{ matrix.python }}
           path: ${{ env.LMCACHE_LOG_FILE }}
